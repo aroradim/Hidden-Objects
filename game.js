@@ -1,6 +1,6 @@
 let score = 0;
 let clicks = 0;
-const maxClicks = 20;
+const maxClicks = 10;
 
 // Function to handle clicks in the game area
 function gameAreaClick(event) {
