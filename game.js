@@ -33,7 +33,7 @@ function foundObject(element) {
 
     // Check if all objects have been found
     if (score === 10) {
-        document.getElementById('message').textContent = "Congratulations! You found all 10 objects!";
+        document.getElementById('message').textContent = "Congratulations! You found all 10 characters!";
         disableClicks();
     }
 }
