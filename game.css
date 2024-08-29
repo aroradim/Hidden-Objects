@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#game-area {
+    position: relative;
+    width: 800px;  /* Increase the width */
+    height: 600px; /* Increase the height */
+    margin: 20px auto;
+    background-image: url('./NintendoWorld.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    border: 2px solid #ccc;
+}
+
+.hidden-object {
+    position: absolute;
+    width: 20px;  /* Reduced size */
+    height: 20px; /* Reduced size */
+    cursor: pointer;
+}
+
+/* Positioning hidden objects randomly (you can adjust these) */
+.hidden-object:nth-child(1) { top: 10%; left: 20%; }
+.hidden-object:nth-child(2) { top: 70%; left: 60%; }
+.hidden-object:nth-child(3) { top: 30%; left: 80%; }
+.hidden-object:nth-child(4) { top: 50%; left: 10%; }
+.hidden-object:nth-child(5) { top: 20%; left: 50%; }
+.hidden-object:nth-child(6) { top: 80%; left: 20%; }
+.hidden-object:nth-child(7) { top: 40%; left: 40%; }
+.hidden-object:nth-child(8) { top: 60%; left: 70%; }
+.hidden-object:nth-child(9) { top: 30%; left: 30%; }
+.hidden-object:nth-child(10) { top: 90%; left: 50%; }
+
+.decoy {
+    width: 30px;  /* Smaller size to reduce impact */
+    height: 30px; /* Smaller size to reduce impact */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent color */
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    /* Position the decoys randomly, or you can set specific positions */
+}
+
+
+h1 {
+    font-size: 2.5em; /* Larger font size */
+    color: #333; /* Dark gray color */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for spacing */
+    border-bottom: 2px solid #007bff; /* Blue underline for emphasis */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+
+/* Position the decoys randomly */
+.decoy:nth-child(11) { top: 15%; left: 40%; }
+.decoy:nth-child(12) { top: 25%; left: 70%; }
+.decoy:nth-child(13) { top: 75%; left: 20%; }
+.decoy:nth-child(14) { top: 55%; left: 80%; }
+.decoy:nth-child(15) { top: 35%; left: 10%; }
+.decoy:nth-child(16) { top: 85%; left: 30%; }
+
+#scorecard {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #007bff; /* Blue border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    display: inline-block; /* Adjust to fit content */
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+}
+
+#scorecard h2 {
+    font-size: 2em; /* Larger font size */
+    color: #007bff; /* Blue color for the score */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#scorecard span {
+    font-size: 2.5em; /* Larger font size for score number */
+    font-weight: bold; /* Bold text for the score number */
+    color: #333; /* Dark color for the score number */
+}
+
