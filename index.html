@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the 10 Hidden Objects Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Hidden Objects</h1>
+        <p id="message">Find all 10 hidden objects!</p>
+        <div id="game-area">
+            <!-- Hidden objects -->
+            <img src="Yoshi.png" class="hidden-object" onclick="foundObject(this)">
+            <img src="Luigi.png" class="hidden-object" onclick="foundObject(this)">
+            <img src="DonkeyKong.png" class="hidden-object" onclick="foundObject(this)">
+            <img src="Mario.png" class="hidden-object" onclick="foundObject(this)">
+            <img src="Bowser.png" class="hidden-object" onclick="foundObject(this)">
+            <img src="Wario.webp" class="hidden-object" onclick="foundObject(this)">
+            <img src="Peach.png" class="hidden-object" onclick="foundObject(this)">
+            <img src="Toad.webp" class="hidden-object" onclick="foundObject(this)">
+            <img src="Waluigi.webp" class="hidden-object" onclick="foundObject(this)">
+            <img src="Koopa.webp" class="hidden-object" onclick="foundObject(this)">
+
+            <!-- Decoy elements to make it challenging -->
+            <div class="decoy"></div>
+            <div class="decoy"></div>
+            <div class="decoy"></div>
+            <div class="decoy"></div>
+            <div class="decoy"></div>
+            <div class="decoy"></div>
+        </div>
+        <div id="scorecard">
+            <h2>Score: <span id="score">0</span>/10</h2>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
